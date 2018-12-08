@@ -1,0 +1,16 @@
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.deps.json
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.runtimeconfig.json
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.runtimeconfig.dev.json
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.pdb
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csprojResolveAssemblyReference.cache
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csproj.CoreCompileInputs.cache
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.AssemblyInfoInputs.cache
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.AssemblyInfo.cs
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.pdb
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.dll
+C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.pdb
