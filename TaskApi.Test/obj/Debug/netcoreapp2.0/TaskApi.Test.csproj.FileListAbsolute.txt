@@ -17,3 +17,23 @@ C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskA
 C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.deps.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.runtimeconfig.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.runtimeconfig.dev.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.Test.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\TaskApi.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csprojAssemblyReference.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csproj.CoreCompileInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.AssemblyInfoInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.AssemblyInfo.cs
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csproj.CopyComplete
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.pdb
