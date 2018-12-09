@@ -23,6 +23,13 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "coverlet.msbuild/2.4.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/coverlet.msbuild.props": {},
+          "build/netstandard2.0/coverlet.msbuild.targets": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -1553,13 +1560,17 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
-      "Microsoft.CodeCoverage/1.0.3": {
+      "Microsoft.CodeCoverage/15.9.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+          "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+          "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
         }
       },
       "Microsoft.CSharp/4.4.0": {
@@ -5348,6 +5359,79 @@
         "readme.txt"
       ]
     },
+    "coverlet.msbuild/2.4.0": {
+      "sha512": "MzrE+2jFuUqtNcG4lZisVqiDk/Uw8NjPDYKsx4twvbNXio9n3UgDp3+UcOextdX7k9IldrgcpCcRLSwKKyo2eA==",
+      "type": "package",
+      "path": "coverlet.msbuild/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/ConsoleTables.dll",
+        "build/netstandard2.0/Microsoft.Build.Framework.dll",
+        "build/netstandard2.0/Microsoft.Build.Utilities.Core.dll",
+        "build/netstandard2.0/Microsoft.CSharp.dll",
+        "build/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/Newtonsoft.Json.dll",
+        "build/netstandard2.0/System.AppContext.dll",
+        "build/netstandard2.0/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/System.Collections.Immutable.dll",
+        "build/netstandard2.0/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/System.Linq.Expressions.dll",
+        "build/netstandard2.0/System.Linq.dll",
+        "build/netstandard2.0/System.ObjectModel.dll",
+        "build/netstandard2.0/System.Private.DataContractSerialization.dll",
+        "build/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "build/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "build/netstandard2.0/System.Reflection.Emit.dll",
+        "build/netstandard2.0/System.Reflection.Metadata.dll",
+        "build/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard2.0/System.Resources.Reader.dll",
+        "build/netstandard2.0/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "build/netstandard2.0/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/System.Threading.Thread.dll",
+        "build/netstandard2.0/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/System.Threading.dll",
+        "build/netstandard2.0/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/System.Xml.XDocument.dll",
+        "build/netstandard2.0/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/coverlet.core.dll",
+        "build/netstandard2.0/coverlet.msbuild.props",
+        "build/netstandard2.0/coverlet.msbuild.targets",
+        "build/netstandard2.0/coverlet.msbuild.tasks.deps.json",
+        "build/netstandard2.0/coverlet.msbuild.tasks.dll",
+        "build/netstandard2.0/runtimes/linux/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "build/netstandard2.0/runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "coverlet.msbuild.2.4.0.nupkg.sha512",
+        "coverlet.msbuild.nuspec"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "zisTbxitzki256+rKY0myI2T1yLyO9+qAU8P+FXkd8Dv0Iymk484Y9SbwUlyL3igF/bpiCv7SCdv349rN/JbfQ==",
       "type": "package",
@@ -6616,15 +6700,39 @@
         "microsoft.codeanalysis.razor.nuspec"
       ]
     },
-    "Microsoft.CodeCoverage/1.0.3": {
-      "sha512": "CmE+u43TKfA4dLkle2NwArwZ9qAvPDC/8jzTDGIxdAI6+5lU8JKm9wRF8YICz5RMtLe+jzMmPm0/r1Awo6zoiQ==",
+    "Microsoft.CodeCoverage/15.9.0": {
+      "sha512": "7hLVTRUCxAALZakJQgGfWJammOBXWiLyGGpaFz/+zDR+Rwj+sB4RMgEZAw8HQDpc1tjpbnzq9JEs/+OmFI94XA==",
       "type": "package",
-      "path": "microsoft.codecoverage/1.0.3",
+      "path": "microsoft.codecoverage/15.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.1.0.3.nupkg.sha512",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard1.0/CodeCoverage/covrun32.dll",
+        "build/netstandard1.0/CodeCoverage/msdia140.dll",
+        "build/netstandard1.0/Microsoft.CodeCoverage.props",
+        "build/netstandard1.0/Microsoft.CodeCoverage.targets",
+        "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
+        "build/netstandard1.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "microsoft.codecoverage.15.9.0.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
@@ -14471,6 +14579,7 @@
     ".NETCoreApp,Version=v2.0": [
       "MSTest.TestAdapter >= 1.2.0",
       "MSTest.TestFramework >= 1.2.0",
+      "Microsoft.CodeCoverage >= 15.9.0",
       "Microsoft.NET.Test.Sdk >= 15.5.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Moq >= 4.10.1",
@@ -14478,6 +14587,7 @@
       "OpenCoverToCoberturaConverter >= 0.3.4",
       "TaskApi >= 1.0.0",
       "XunitXml.TestLogger >= 2.0.0",
+      "coverlet.msbuild >= 2.4.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.1"
     ]
@@ -14535,6 +14645,10 @@
             "target": "Package",
             "version": "[1.2.0, )"
           },
+          "Microsoft.CodeCoverage": {
+            "target": "Package",
+            "version": "[15.9.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[15.5.0, )"
@@ -14560,6 +14674,12 @@
           "XunitXml.TestLogger": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "coverlet.msbuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.4.0, )"
           },
           "xunit": {
             "target": "Package",

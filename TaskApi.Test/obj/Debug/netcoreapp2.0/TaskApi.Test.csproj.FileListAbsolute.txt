@@ -37,3 +37,5 @@ E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.csproj.CopyComplete
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.dll
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\obj\Debug\netcoreapp2.0\TaskApi.Test.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestLogger.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll
