@@ -48,5 +48,25 @@ namespace TaskApi.Test
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal(1, items.Count);
         }
+
+        [Fact]
+        public void GetAllTask_ShouldGetAllTask1()
+        {
+            var returnData = new List<TaskDTO>();
+            returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 });
+
+
+            _repository.Setup(service => service.GetAllTask())
+                        .Returns(returnData);
+
+            var response = _controller.GetAllTask();
+
+            var okResult = response as OkObjectResult;
+            var items = okResult.Value as List<TaskDTO>;
+
+            Assert.Null(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
+            Assert.Equal(1, items.Count);
+        }
     }
 }
