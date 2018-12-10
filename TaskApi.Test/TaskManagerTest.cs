@@ -50,23 +50,21 @@ namespace TaskApi.Test
         }
 
         [Fact]
-        public void GetAllTask_ShouldGetAllTask1()
+        public void PingTest_ShouldGetAllTask1()
         {
-            var returnData = new List<TaskDTO>();
-            returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 });
+            var returnData = "Success!!!";
 
+            //_repository.Setup(service => service.GetAllTask())
+            //            .Returns(returnData);
 
-            _repository.Setup(service => service.GetAllTask())
-                        .Returns(returnData);
-
-            var response = _controller.GetAllTask();
+            var response = _controller.PingTest();
 
             var okResult = response as OkObjectResult;
-            var items = okResult.Value as List<TaskDTO>;
+            var items = okResult.Value as string;
 
-            Assert.Null(okResult.Value);
+            Assert.NotNull(okResult.Value);
             Assert.Equal(200, okResult.StatusCode);
-            Assert.Equal(1, items.Count);
+            Assert.Equal(returnData, Convert.ToString(items));
         }
     }
 }

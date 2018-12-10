@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e5c26d5ab42cadf84229031f0bd39e665cd8ae91"
+    "signature": "9f70882322dcebb4b6495db8edd50ea6648e70e4"
   },
   "compilationOptions": {},
   "targets": {
@@ -15,6 +15,7 @@
           "Moq": "4.10.1",
           "OpenCover": "4.6.519",
           "OpenCoverToCoberturaConverter": "0.3.4",
+          "ReportGenerator": "4.0.4",
           "TaskApi": "1.0.0",
           "XunitXml.TestLogger": "2.0.0",
           "coverlet.msbuild": "2.4.0",
@@ -2692,6 +2693,7 @@
           }
         }
       },
+      "ReportGenerator/4.0.4": {},
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "runtimeTargets": {
           "runtime/debian.8-x64/native/_._": {
@@ -5474,6 +5476,13 @@
       "sha512": "sha512-m9y+SLyqYEDcc3lnqAHO2VOsdIeDuO02IuBXeo7CIDve2J3ahXQRieZt2DuoXgCnWW83PgN6+8CQsaORlwAMXw==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
+    },
+    "ReportGenerator/4.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1oHdpRqi++r0WJlEgm+lPBVQnUd5cGvWv8N24deh3oiEkV0KH4UOXTUy9/d1xPQCe17NjwJkB2dqLWhh/deWCA==",
+      "path": "reportgenerator/4.0.4",
+      "hashPath": "reportgenerator.4.0.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
