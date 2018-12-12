@@ -27,6 +27,7 @@
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\suchi\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\suchi\.nuget\packages\microsoft.entityframeworkcore.tools\2.0.1</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\suchi\.nuget\packages\entityframework\6.2.0</PkgEntityFramework>
     <PkgReportGenerator Condition=" '$(PkgReportGenerator)' == '' ">C:\Users\suchi\.nuget\packages\reportgenerator\4.0.4</PkgReportGenerator>
   </PropertyGroup>
 </Project>
