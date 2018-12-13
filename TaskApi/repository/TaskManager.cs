@@ -1,12 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using TaskApi.Entity;
 using TaskApi.Model;
+using System.Linq;
+using AutoMapper;
 
 namespace TaskApi.repository
 {
     public class TaskManager : ITaskManagerRepository
     {
+        private TaskDBContext _context;
+
+        public TaskManager(TaskDBContext context)
+        {
+            _context = context;
+        }
+
         public void AddTask(TaskDTO tsk)
         {
             throw new NotImplementedException();
@@ -19,8 +28,21 @@ namespace TaskApi.repository
 
         public List<TaskDTO> GetAllTask()
         {
-
-            throw new NotImplementedException();
+            var items = from task in _context.Tasks
+                        join parent in _context.ParentTask on task.ParentId equals parent.ParentId
+                        select new TaskDTO
+                        {
+                            TaskId = task.TaskId,
+                            TaskDesc = task.TaskDesc,
+                            StartDate = task.StartDate,
+                            EndDate  = task.EndDate,
+                            ParentId= task.ParentId,
+                            ParentDesc = parent.ParentTaskDesc,
+                            Priority = task.Priority
+                        };
+                         
+            return items.ToList();
+      
         }
 
         public TaskDTO GetTaskById(int id)

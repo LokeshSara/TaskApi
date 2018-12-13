@@ -8,8 +8,14 @@ namespace TaskApi.Entity
 {
     public class TaskDBContext : DbContext
     {
-        DbSet<Task> Tasks { get; set; }
+        public TaskDBContext(DbContextOptions options)
+            :base(options)
+        {
 
-        DbSet<ParentTask> ParentTask { get; set; }
+        }
+
+        public DbSet<Task> Tasks { get; set; }
+
+        public DbSet<ParentTask> ParentTask { get; set; }
     }
 }

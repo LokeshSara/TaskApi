@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TaskApi.Model;
 using TaskApi.repository;
 
 namespace TaskApi.controller
@@ -21,7 +23,10 @@ namespace TaskApi.controller
         public IActionResult GetAllTask()
         {
             var tasks =  _repository.GetAllTask();
-            return Ok(tasks);
+
+            var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
+
+            return Ok(result);
         }
 
         [HttpGet("Ping")]
