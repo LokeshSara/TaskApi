@@ -49,7 +49,7 @@ namespace TaskApi.Migrations
                 name: "IX_Tasks_ParentId",
                 table: "Tasks",
                 column: "ParentId",
-                unique: true);
+                unique: false);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
