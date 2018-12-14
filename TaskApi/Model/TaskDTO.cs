@@ -14,5 +14,8 @@ namespace TaskApi.Model
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int Priority { get; set; }
+
+        public int PriorityMax { get; set; }
+        public int PriorityMin { get; set; }
     }
 }

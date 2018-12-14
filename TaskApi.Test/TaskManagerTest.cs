@@ -23,10 +23,23 @@ namespace TaskApi.Test
         //    // Initalization code goes here
         //}
 
+        
+
         public TaskManagerTest()
         {
             _repository = new Mock<ITaskManagerRepository>();
             _controller = new TaskController(_repository.Object);
+
+            
+        }
+
+        private static void InitializeAutomapper()
+        {
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<TaskApi.Entity.Task, TaskDTO>();
+                cfg.CreateMap<TaskApi.Entity.ParentTask, ParentTaskDTO>();
+            });
         }
 
         [Fact]
@@ -50,7 +63,7 @@ namespace TaskApi.Test
         }
 
         [Fact]
-        public void PingTest_ShouldGetAllTask1()
+        public void PingTest_ShouldTestPing()
         {
             var returnData = "Success!!!";
 
@@ -65,6 +78,104 @@ namespace TaskApi.Test
             Assert.NotNull(okResult.Value);
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal(returnData, Convert.ToString(items));
+        }
+
+        [Fact]
+        public void GetTaskById_ShouldGetTaskByID()
+        {
+            var returnData = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+
+
+            _repository.Setup(service => service.GetTaskById(1))
+                        .Returns(returnData);
+
+            var response = _controller.GetTaskById(1);
+
+            var okResult = response as OkObjectResult;
+            var items = okResult.Value as TaskDTO;
+
+            Assert.NotNull(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
+            Assert.Equal("First Task", items.TaskDesc);
+        }
+
+        [Fact]
+        public void Search_ShouldGetTaskBySearchParam()
+        {
+            var returnData = new List<TaskDTO>();
+            returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 });
+
+            var searchOption = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+
+            _repository.Setup(service => service.SearchTask(searchOption))
+                        .Returns(returnData);
+
+            var response = _controller.Search(searchOption);
+
+            var okResult = response as OkObjectResult;
+            var items = okResult.Value as List<TaskDTO>;
+
+            Assert.NotNull(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
+            Assert.Equal(1, items.Count);
+        }
+
+        [Fact]
+        public void DeleteTask_ShouldDeleteTask()
+        {
+            //var returnData = new List<TaskDTO>();
+            //returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 });
+
+
+            _repository.Setup(service => service.DeleteTask(1));
+                        
+
+            var response = _controller.DeleteTask(1);
+
+            var okResult = response as OkObjectResult;
+
+
+            Assert.NotNull(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
+        }
+
+        [Fact]
+        public void AddTask_ShouldAddTaskDetails()
+        {
+            InitializeAutomapper();
+
+            var task = new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 1, Priority = 1 };
+
+            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+
+            _repository.Setup(service => service.AddTask(task));
+                        
+
+            var response = _controller.AddTask(taskDto);
+
+            var okResult = response as OkObjectResult;
+
+            Assert.NotNull(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
+
+        }
+
+        [Fact]
+        public void UpdateTask_ShouldUpdateTaskDetails()
+        {
+            var task = new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 1, Priority = 1 };
+
+            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+
+            _repository.Setup(service => service.UpdateTask(task));
+
+
+            var response = _controller.UpdateTask(taskDto);
+
+            var okResult = response as OkObjectResult;
+
+            Assert.NotNull(okResult.Value);
+            Assert.Equal(200, okResult.StatusCode);
         }
     }
 }

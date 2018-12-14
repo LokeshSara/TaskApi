@@ -13,10 +13,10 @@ namespace TaskApi.repository
 
         List<TaskDTO> SearchTask(TaskDTO tsk);
 
-        void UpdateTask(TaskDTO tsk);
+        void UpdateTask(Entity.Task tsk);
 
         void DeleteTask(int id);
 
-        void AddTask(TaskDTO tsk);
+        void AddTask(Entity.Task tsk);
     }
 }
