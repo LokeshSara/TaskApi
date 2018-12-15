@@ -16,6 +16,6 @@ namespace TaskApi.Entity
 
         public DbSet<Task> Tasks { get; set; }
 
-        public DbSet<ParentTask> ParentTask { get; set; }
+   
     }
 }

@@ -12,7 +12,6 @@ namespace TaskApi.Entity
         [Key]
         public int TaskId { get; set; }
 
-        [ForeignKey("ParentId")]
         public int ParentId { get; set; }
         public string TaskDesc { get; set; }
         public DateTime StartDate { get; set; }

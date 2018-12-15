@@ -29,58 +29,43 @@ namespace TaskApi.repository
             _context.SaveChanges();
         }
 
-        public List<TaskDTO> GetAllTask()
+        public List<Entity.Task> GetAllTask()
         {
-            var items = from task in _context.Tasks
-                        join parent in _context.ParentTask on task.ParentId equals parent.ParentId
-                        select new TaskDTO
-                        {
-                            TaskId = task.TaskId,
-                            TaskDesc = task.TaskDesc,
-                            StartDate = task.StartDate,
-                            EndDate  = task.EndDate,
-                            ParentId= task.ParentId,
-                            ParentDesc = parent.ParentTaskDesc,
-                            Priority = task.Priority
-                        };
+            
                          
-            return items.ToList();
+            return _context.Tasks.ToList();
       
         }
 
-        public TaskDTO GetTaskById(int id)
+        public Entity.Task GetTaskById(int id)
         {
             var items = from task in _context.Tasks
-                        join parent in _context.ParentTask on task.ParentId equals parent.ParentId
                         where task.TaskId == id
-                        select new TaskDTO
+                        select new Entity.Task
                         {
                             TaskId = task.TaskId,
                             TaskDesc = task.TaskDesc,
                             StartDate = task.StartDate,
                             EndDate = task.EndDate,
                             ParentId = task.ParentId,
-                            ParentDesc = parent.ParentTaskDesc,
                             Priority = task.Priority
                         };
 
             return items.FirstOrDefault();
         }
 
-        public List<TaskDTO> SearchTask(TaskDTO tsk)
+        public List<Entity.Task> SearchTask(TaskDTO tsk)
         {   
             var items = from task in _context.Tasks
-                        join parent in _context.ParentTask on task.ParentId equals parent.ParentId
-                        where task.TaskDesc.Contains(tsk.TaskDesc) || parent.ParentTaskDesc.Contains(tsk.ParentDesc) ||
+                        where task.TaskDesc.Contains(tsk.TaskDesc)||
                                 (task.Priority >= tsk.PriorityMin && task.Priority <= tsk.PriorityMax) || task.StartDate == tsk.StartDate || task.EndDate ==tsk.EndDate
-                        select new TaskDTO
+                        select new Entity.Task
                         {
                             TaskId = task.TaskId,
                             TaskDesc = task.TaskDesc,
                             StartDate = task.StartDate,
                             EndDate = task.EndDate,
                             ParentId = task.ParentId,
-                            ParentDesc = parent.ParentTaskDesc,
                             Priority = task.Priority
                         };
 

@@ -56,7 +56,7 @@ namespace TaskApi
             AutoMapper.Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<TaskApi.Entity.Task, TaskDTO>();
-                cfg.CreateMap<TaskApi.Entity.ParentTask, ParentTaskDTO>();
+           
             });
 
             app.UseCors(builder =>
