@@ -22,11 +22,20 @@ namespace TaskApi.controller
         [HttpGet("")]
         public IActionResult GetAllTask()
         {
-            var tasks =  _repository.GetAllTask();
+            try
+            {
+                var tasks = _repository.GetAllTask();
+                return Ok(tasks);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
 
             //var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
 
-            return Ok(tasks);
+            
         }
 
         [HttpGet("{id}")]
