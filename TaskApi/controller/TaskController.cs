@@ -24,9 +24,9 @@ namespace TaskApi.controller
         {
             var tasks =  _repository.GetAllTask();
 
-            var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
+            //var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
 
-            return Ok(result);
+            return Ok(tasks);
         }
 
         [HttpGet("{id}")]
@@ -34,9 +34,9 @@ namespace TaskApi.controller
         {
             var tasks = _repository.GetTaskById(id);
 
-            var result = Mapper.Map<TaskDTO>(tasks);
+            //var result = Mapper.Map<TaskDTO>(tasks);
 
-            return Ok(result);
+            return Ok(tasks);
         }
 
         [HttpPost("search")]
@@ -46,9 +46,9 @@ namespace TaskApi.controller
 
             var tasks = _repository.SearchTask(searchoption);
 
-            var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
+            //var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
 
-            return Ok(result);
+            return Ok(tasks);
         }
 
         [HttpPost("add")]

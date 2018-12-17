@@ -7,11 +7,11 @@ namespace TaskApi.repository
 {
     public interface ITaskManagerRepository
     {
-        List<Entity.Task> GetAllTask();
+        List<TaskDTO> GetAllTask();
 
-        Entity.Task GetTaskById(int id);
+        TaskDTO GetTaskById(int id);
 
-        List<Entity.Task> SearchTask(SearchOptions optn);
+        List<TaskDTO> SearchTask(SearchOptions optn);
 
         void UpdateTask(Entity.Task tsk);
 
