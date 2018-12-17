@@ -59,8 +59,10 @@ namespace TaskApi
            
             });
 
+            string[] origins = new string[] { "http://suchi-pc/", "http://localhost:4200/" };
+
             app.UseCors(builder =>
-                 builder.WithOrigins("http://suchi-pc/").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
+                 builder.WithOrigins(origins).AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
 
             app.UseMvc();
 

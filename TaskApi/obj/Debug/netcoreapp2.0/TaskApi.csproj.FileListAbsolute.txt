@@ -18,3 +18,4 @@ E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.Assem
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.AssemblyInfo.cs
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.dll
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.csprojAssemblyReference.cache
