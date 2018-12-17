@@ -45,8 +45,8 @@ namespace TaskApi.Test
         [Fact]
         public void GetAllTask_ShouldGetAllTask()
         {
-            var returnData = new List<Entity.Task>();
-            returnData.Add(new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 });
+            var returnData = new List<TaskDTO>();
+            returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 });
 
 
             _repository.Setup(service => service.GetAllTask())
@@ -83,7 +83,7 @@ namespace TaskApi.Test
         [Fact]
         public void GetTaskById_ShouldGetTaskByID()
         {
-            var returnData = new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 };
+            var returnData = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 };
 
 
             _repository.Setup(service => service.GetTaskById(1))
@@ -102,10 +102,10 @@ namespace TaskApi.Test
         [Fact]
         public void Search_ShouldGetTaskBySearchParam()
         {
-            var returnData = new List<Entity.Task>();
-            returnData.Add(new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 });
+            var returnData = new List<TaskDTO>();
+            returnData.Add(new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), Priority = 1 });
 
-            var searchOption = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+            var searchOption = new SearchOptions { TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018") };
 
             _repository.Setup(service => service.SearchTask(searchOption))
                         .Returns(returnData);
