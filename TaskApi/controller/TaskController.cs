@@ -40,7 +40,7 @@ namespace TaskApi.controller
         }
 
         [HttpPost("search")]
-        public IActionResult Search([FromBody] TaskDTO searchoption)
+        public IActionResult Search([FromBody] SearchOptions searchoption)
         {
             
 
@@ -76,7 +76,7 @@ namespace TaskApi.controller
             return Ok(true);
         }
 
-        [HttpGet("delete/{id}")]
+        [HttpDelete("delete/{id}")]
         public IActionResult DeleteTask(int id)
         {
 

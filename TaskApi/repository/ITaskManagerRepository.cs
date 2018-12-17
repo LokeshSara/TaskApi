@@ -11,7 +11,7 @@ namespace TaskApi.repository
 
         Entity.Task GetTaskById(int id);
 
-        List<Entity.Task> SearchTask(TaskDTO tsk);
+        List<Entity.Task> SearchTask(SearchOptions optn);
 
         void UpdateTask(Entity.Task tsk);
 

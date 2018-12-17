@@ -4,9 +4,11 @@ using TaskApi.Entity;
 using TaskApi.Model;
 using System.Linq;
 using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 
 namespace TaskApi.repository
 {
+   
     public class TaskManager : ITaskManagerRepository
     {
         private TaskDBContext _context;
@@ -54,11 +56,11 @@ namespace TaskApi.repository
             return items.FirstOrDefault();
         }
 
-        public List<Entity.Task> SearchTask(TaskDTO tsk)
+        public List<Entity.Task> SearchTask(SearchOptions optn)
         {   
             var items = from task in _context.Tasks
-                        where task.TaskDesc.Contains(tsk.TaskDesc)||
-                                (task.Priority >= tsk.PriorityMin && task.Priority <= tsk.PriorityMax) || task.StartDate == tsk.StartDate || task.EndDate ==tsk.EndDate
+                        where task.TaskDesc.Contains(optn.TaskDesc)||
+                                (task.Priority >= optn.PriorityMin && task.Priority <= optn.PriorityMax) || task.StartDate == optn.StartDate || task.EndDate == optn.EndDate
                         select new Entity.Task
                         {
                             TaskId = task.TaskId,
