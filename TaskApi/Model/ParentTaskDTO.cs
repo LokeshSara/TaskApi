@@ -8,6 +8,6 @@ namespace TaskApi.Model
     public class ParentTaskDTO
     {
         public int ParentId { get; set; }
-        public string ParentTaskDesc { get; set; }
+        public string ParentTaskDesc { get; set; }  
     }
 }
