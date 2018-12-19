@@ -6,6 +6,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+  
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugType>full</DebugType>
     <DebugSymbols>True</DebugSymbols>
@@ -21,12 +22,19 @@
     <PackageReference Include="Moq" Version="4.10.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="NBench" Version="1.2.2" />
+    <PackageReference Include="NBench.Runner" Version="1.2.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="OpenCover" Version="4.6.519" />
     <PackageReference Include="OpenCoverToCoberturaConverter" Version="0.3.4" />
     <PackageReference Include="ReportGenerator" Version="4.0.4" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="XunitXml.TestLogger" Version="2.0.0" />
+    <DotNetCliToolReference Include="dotnet-nbench" Version="1.2.1" />
+    
   </ItemGroup>
 
   <ItemGroup>

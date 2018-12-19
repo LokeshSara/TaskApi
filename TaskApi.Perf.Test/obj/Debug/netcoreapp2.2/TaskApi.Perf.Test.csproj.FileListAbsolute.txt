@@ -1,0 +1,14 @@
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.Perf.Test.deps.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.Perf.Test.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.csprojAssemblyReference.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.csproj.CoreCompileInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.AssemblyInfoInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.AssemblyInfo.cs
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.Perf.Test.runtimeconfig.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.Perf.Test.runtimeconfig.dev.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.Perf.Test.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\bin\Debug\netcoreapp2.2\TaskApi.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.csproj.CopyComplete
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi.Perf.Test\obj\Debug\netcoreapp2.2\TaskApi.Perf.Test.pdb
