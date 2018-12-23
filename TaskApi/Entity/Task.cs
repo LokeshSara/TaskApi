@@ -10,6 +10,7 @@ namespace TaskApi.Entity
     public class Task
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TaskId { get; set; }
 
         public int ParentId { get; set; }

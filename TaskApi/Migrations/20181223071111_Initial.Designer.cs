@@ -11,7 +11,7 @@ using TaskApi.Entity;
 namespace TaskApi.Migrations
 {
     [DbContext(typeof(TaskDBContext))]
-    [Migration("20181223034442_Initial")]
+    [Migration("20181223071111_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

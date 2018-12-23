@@ -67,8 +67,6 @@ namespace TaskApi.controller
           
 
             var user = new Entity.User {
-                 TaskId= userDtoInfo.TaskId,
-                  ProjectId = userDtoInfo.ProjectId,
                    EmployeeId = userDtoInfo.EmployeeId,
                     FirstName = userDtoInfo.FirstName ,
                      LastName = userDtoInfo.LastName
@@ -88,8 +86,6 @@ namespace TaskApi.controller
             var user = new Entity.User
             {
                 UserId = userDtoInfo.UserId,
-                TaskId = userDtoInfo.TaskId,
-                ProjectId = userDtoInfo.ProjectId,
                 EmployeeId = userDtoInfo.EmployeeId,
                 FirstName = userDtoInfo.FirstName,
                 LastName = userDtoInfo.LastName

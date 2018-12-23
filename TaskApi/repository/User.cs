@@ -17,34 +17,66 @@ namespace TaskApi.repository
             _context = context;
         }
 
-        public void AddUser(Entity.User tsk)
+        public void AddUser(Entity.User usr)
         {
-            throw new NotImplementedException();
+            _context.Add(usr);
+            _context.SaveChanges();
         }
 
         public void DeleteUser(int id)
         {
-            throw new NotImplementedException();
+            var usr = _context.Users.Where(a => a.UserId == id).FirstOrDefault();
+            _context.Remove(usr);
+            _context.SaveChanges();
         }
 
         public List<UserDTO> GetAllUsers()
         {
-            throw new NotImplementedException();
+            var users = _context.Users.ToList().Select(t => new UserDTO
+            {
+                UserId = t.UserId,
+                EmployeeId = t.EmployeeId,
+                FirstName = t.FirstName,
+                LastName = t.LastName
+            });
+
+            return users.ToList();
         }
 
         public UserDTO GetUserById(int id)
         {
-            throw new NotImplementedException();
+            var user = _context.Users.ToList().Where(t => t.UserId == id).
+               Select(t => new UserDTO
+               {
+                   UserId = t.UserId,
+                   EmployeeId = t.EmployeeId,
+                   FirstName = t.FirstName,
+                   LastName = t.LastName
+               });
+
+
+
+            return user.FirstOrDefault();
         }
 
         public List<UserDTO> SerachUser(UserSearchOption optn)
         {
-            throw new NotImplementedException();
+            var items = _context.Users.Where(s => s.FirstName.Contains(optn.SearchKey));
+
+            var result = items.Select(t => new UserDTO
+            {
+                EmployeeId = t.EmployeeId,
+                FirstName = t.FirstName,
+                LastName = t.LastName
+            });
+
+            return result.ToList();
         }
 
         public void UpdateUser(Entity.User usr)
         {
-            throw new NotImplementedException();
+            _context.Update(usr);
+            _context.SaveChanges();
         }
     }
 }
