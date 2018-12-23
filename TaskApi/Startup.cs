@@ -29,7 +29,9 @@ namespace TaskApi
         {
             services.AddMvc();
             services.AddScoped<ITaskManagerRepository, TaskManager>();
-           
+            services.AddScoped<IProjectRepository, repository.Project>();
+            services.AddScoped<IUserRepository, repository.User>();
+
             services.AddDbContext<TaskDBContext>(options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
             services.Configure<IISOptions>(options =>
@@ -53,11 +55,7 @@ namespace TaskApi
             //    await context.Response.WriteAsync("Hello World!");
             //});
 
-            AutoMapper.Mapper.Initialize(cfg =>
-            {
-                cfg.CreateMap<TaskApi.Entity.Task, TaskDTO>();
-           
-            });
+          
 
             string[] origins = new string[] { "http://suchi-pc/", "http://localhost:4200/" };
 

@@ -39,7 +39,7 @@ namespace TaskApi.Perf.Test
         //}
 
         [PerfBenchmark(NumberOfIterations = 1, RunMode = RunMode.Throughput,
-        RunTimeMilliseconds = 1000, TestMode = TestMode.Measurement)]
+        RunTimeMilliseconds = 600000, TestMode = TestMode.Test)]
         [CounterThroughputAssertion("TestCounter", MustBe.GreaterThan, 500.0d)]
         public void GetAllTask_BenchMark()
         {

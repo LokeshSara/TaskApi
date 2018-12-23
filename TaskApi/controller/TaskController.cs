@@ -33,7 +33,7 @@ namespace TaskApi.controller
             }
             
 
-            //var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
+        
 
             
         }
@@ -43,7 +43,7 @@ namespace TaskApi.controller
         {
             var tasks = _repository.GetTaskById(id);
 
-            //var result = Mapper.Map<TaskDTO>(tasks);
+         
 
             return Ok(tasks);
         }
@@ -55,7 +55,7 @@ namespace TaskApi.controller
 
             var tasks = _repository.SearchTask(searchoption);
 
-            //var result = Mapper.Map<IEnumerable<TaskDTO>>(tasks);
+          
 
             return Ok(tasks);
         }
@@ -63,7 +63,14 @@ namespace TaskApi.controller
         [HttpPost("add")]
         public IActionResult AddTask([FromBody] TaskDTO TaskDtoInfo)
         {
-            var task = Mapper.Map<Entity.Task>(TaskDtoInfo);
+
+            var task = new Entity.Task { 
+                 TaskDesc = TaskDtoInfo.TaskDesc,
+                 ParentId = TaskDtoInfo.ParentId,
+                 StartDate = TaskDtoInfo.StartDate,
+                 EndDate = TaskDtoInfo.EndDate,
+                  Priority = TaskDtoInfo.Priority,
+            };
 
             _repository.AddTask(task);
 
@@ -76,7 +83,15 @@ namespace TaskApi.controller
         public IActionResult UpdateTask([FromBody] TaskDTO TaskDtoInfo)
         {
 
-            var task = Mapper.Map<Entity.Task>(TaskDtoInfo);
+            var task = new Entity.Task
+            {
+                TaskId = TaskDtoInfo.TaskId,
+                TaskDesc = TaskDtoInfo.TaskDesc,
+                ParentId = TaskDtoInfo.ParentId,
+                StartDate = TaskDtoInfo.StartDate,
+                EndDate = TaskDtoInfo.EndDate,
+                Priority = TaskDtoInfo.Priority,
+            };
 
             _repository.UpdateTask(task);
 

@@ -17,8 +17,26 @@ namespace TaskApi.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-120")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("TaskApi.Entity.Project", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<int>("Priority");
+
+                    b.Property<string>("ProjectDesc");
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.HasKey("ProjectId");
+
+                    b.ToTable("Projects");
+                });
 
             modelBuilder.Entity("TaskApi.Entity.Task", b =>
                 {
@@ -31,13 +49,37 @@ namespace TaskApi.Migrations
 
                     b.Property<int>("Priority");
 
+                    b.Property<int>("ProjectId");
+
                     b.Property<DateTime>("StartDate");
+
+                    b.Property<int>("Status");
 
                     b.Property<string>("TaskDesc");
 
                     b.HasKey("TaskId");
 
                     b.ToTable("Tasks");
+                });
+
+            modelBuilder.Entity("TaskApi.Entity.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("EmployeeId");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<int>("ProjectId");
+
+                    b.Property<int>("TaskId");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

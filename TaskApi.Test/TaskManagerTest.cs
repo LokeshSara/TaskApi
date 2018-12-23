@@ -8,15 +8,24 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 using NBench;
+using AutoMapper.Configuration;
+using AutoMapper;
+using Xunit.Sdk;
+using System.Collections.Concurrent;
+using System.Reflection;
+using Xunit.Abstractions;
+using System.Linq;
 
 namespace TaskApi.Test
 {
 
-
-    public class TaskManagerTest
+    
+    public class TaskManagerTest 
     {
         private Mock<ITaskManagerRepository> _repository;
         private TaskController _controller;
+   
+
 
         //[AssemblyInitialize]
         //public static void Init(TestContext context)
@@ -24,28 +33,22 @@ namespace TaskApi.Test
         //    // Initalization code goes here
         //}
 
-        
 
-            
+
+
 
 
 
         public TaskManagerTest()
         {
+          
             _repository = new Mock<ITaskManagerRepository>();
             _controller = new TaskController(_repository.Object);
 
             
         }
 
-        private static void InitializeAutomapper()
-        {
-            AutoMapper.Mapper.Initialize(cfg =>
-            {
-                cfg.CreateMap<TaskApi.Entity.Task, TaskDTO>();
-            
-            });
-        }
+      
 
         [Fact]
         public void GetAllTask_ShouldGetAllTask()
@@ -147,11 +150,11 @@ namespace TaskApi.Test
         [Fact]
         public void AddTask_ShouldAddTaskDetails()
         {
-            InitializeAutomapper();
+
 
             var task = new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 1, Priority = 1 };
 
-            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 0, Priority = 1 };
 
             _repository.Setup(service => service.AddTask(task));
                         
@@ -170,7 +173,7 @@ namespace TaskApi.Test
         {
             var task = new Entity.Task { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 1, Priority = 1 };
 
-            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = null, Priority = 1 };
+            var taskDto = new TaskDTO { TaskId = 1, TaskDesc = "First Task", StartDate = Convert.ToDateTime("12/07/2018"), EndDate = Convert.ToDateTime("12/31/2018"), ParentId = 0, Priority = 1 };
 
             _repository.Setup(service => service.UpdateTask(task));
 
@@ -183,4 +186,5 @@ namespace TaskApi.Test
             Assert.Equal(200, okResult.StatusCode);
         }
     }
+
 }
