@@ -27,6 +27,8 @@ namespace TaskApi.Migrations
 
                     b.Property<DateTime>("EndDate");
 
+                    b.Property<int>("ManagerId");
+
                     b.Property<int>("Priority");
 
                     b.Property<string>("ProjectDesc");
@@ -56,6 +58,8 @@ namespace TaskApi.Migrations
                     b.Property<int>("Status");
 
                     b.Property<string>("TaskDesc");
+
+                    b.Property<int>("UserId");
 
                     b.HasKey("TaskId");
 

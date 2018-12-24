@@ -70,7 +70,9 @@ namespace TaskApi.controller
                 ProjectDesc = ProjectDtoInfo.ProjectDesc,
                  StartDate = ProjectDtoInfo.StartDate,
                   EndDate = ProjectDtoInfo.EndDate,
-                   Priority = ProjectDtoInfo.Priority
+                   Priority = ProjectDtoInfo.Priority,
+                   ManagerId =ProjectDtoInfo.ManagerId,
+                   
             };
 
 
@@ -91,7 +93,8 @@ namespace TaskApi.controller
                 ProjectDesc = projectDtoInfo.ProjectDesc,
                 StartDate = projectDtoInfo.StartDate,
                 EndDate = projectDtoInfo.EndDate,
-                Priority = projectDtoInfo.Priority
+                Priority = projectDtoInfo.Priority,
+                ManagerId = projectDtoInfo.ManagerId
             };
 
             _repository.UpdateProject(project);

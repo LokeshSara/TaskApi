@@ -42,7 +42,9 @@ namespace TaskApi.repository
                 StartDate = t.StartDate,
                 EndDate = t.EndDate,
                 ParentId = t.ParentId,
-                ParentDesc = GetParentDescription(t.ParentId)
+                ParentDesc = GetParentDescription(t.ParentId),
+                ProjectId= t.ProjectId,
+                UserId = t.UserId
             });
 
 
@@ -74,7 +76,9 @@ namespace TaskApi.repository
                     StartDate = t.StartDate,
                     EndDate = t.EndDate,
                     ParentId = t.ParentId,
-                    ParentDesc = GetParentDescription(t.ParentId)
+                    ParentDesc = GetParentDescription(t.ParentId),
+                    ProjectId = t.ProjectId,
+                    UserId = t.UserId
                 });
 
 
@@ -123,8 +127,10 @@ namespace TaskApi.repository
                     StartDate = t.StartDate,
                     EndDate = t.EndDate,
                     ParentId = t.ParentId,
-                    ParentDesc = GetParentDescription(t.ParentId)
-                });
+                    ParentDesc = GetParentDescription(t.ParentId),
+                ProjectId = t.ProjectId,
+                UserId = t.UserId
+            });
 
 
             return result.ToList();

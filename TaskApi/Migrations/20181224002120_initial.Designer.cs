@@ -11,8 +11,8 @@ using TaskApi.Entity;
 namespace TaskApi.Migrations
 {
     [DbContext(typeof(TaskDBContext))]
-    [Migration("20181223071111_Initial")]
-    partial class Initial
+    [Migration("20181224002120_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +27,8 @@ namespace TaskApi.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("EndDate");
+
+                    b.Property<int>("ManagerId");
 
                     b.Property<int>("Priority");
 
@@ -57,6 +59,8 @@ namespace TaskApi.Migrations
                     b.Property<int>("Status");
 
                     b.Property<string>("TaskDesc");
+
+                    b.Property<int>("UserId");
 
                     b.HasKey("TaskId");
 

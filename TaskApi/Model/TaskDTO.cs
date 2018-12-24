@@ -20,6 +20,7 @@ namespace TaskApi.Model
 
         public int ProjectId { get; set; }
         public int Status { get; set; }
+        public int UserId { get; set; }
     }
 
 

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TaskApi.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,6 +16,7 @@ namespace TaskApi.Migrations
                     ProjectId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     EndDate = table.Column<DateTime>(nullable: false),
+                    ManagerId = table.Column<int>(nullable: false),
                     Priority = table.Column<int>(nullable: false),
                     ProjectDesc = table.Column<string>(nullable: true),
                     StartDate = table.Column<DateTime>(nullable: false)
@@ -37,7 +38,8 @@ namespace TaskApi.Migrations
                     ProjectId = table.Column<int>(nullable: false),
                     StartDate = table.Column<DateTime>(nullable: false),
                     Status = table.Column<int>(nullable: false),
-                    TaskDesc = table.Column<string>(nullable: true)
+                    TaskDesc = table.Column<string>(nullable: true),
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

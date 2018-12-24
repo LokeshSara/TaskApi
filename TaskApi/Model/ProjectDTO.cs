@@ -12,6 +12,7 @@ namespace TaskApi.Model
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int Priority { get; set; }
+        public int ManagerId { get; set; }
     }
 
     public class ProjectSearchOptions

@@ -70,6 +70,8 @@ namespace TaskApi.controller
                  StartDate = TaskDtoInfo.StartDate,
                  EndDate = TaskDtoInfo.EndDate,
                   Priority = TaskDtoInfo.Priority,
+                  ProjectId= TaskDtoInfo.ProjectId,
+                  UserId = TaskDtoInfo.UserId
             };
 
             _repository.AddTask(task);
@@ -91,6 +93,8 @@ namespace TaskApi.controller
                 StartDate = TaskDtoInfo.StartDate,
                 EndDate = TaskDtoInfo.EndDate,
                 Priority = TaskDtoInfo.Priority,
+                ProjectId = TaskDtoInfo.ProjectId,
+                UserId = TaskDtoInfo.UserId
             };
 
             _repository.UpdateTask(task);
