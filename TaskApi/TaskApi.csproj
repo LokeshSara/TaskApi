@@ -13,10 +13,6 @@
     <Compile Remove="Entity\ParentTask.cs" />
     <Compile Remove="Model\ParentTaskDTO.cs" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="web.config" />
-  </ItemGroup>
   
   <ItemGroup>
     <Folder Include="Migrations\" />

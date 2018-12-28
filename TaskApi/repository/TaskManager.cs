@@ -58,7 +58,7 @@ namespace TaskApi.repository
         {
             var tsk = _context.Tasks.Where(t => t.TaskId == parentId).FirstOrDefault();
             if (tsk != null)
-                return tsk.TaskDesc;
+                return tsk.TaskDesc.ToLower();
             else
                 return string.Empty;
         }
@@ -114,10 +114,10 @@ namespace TaskApi.repository
                 items = items.Where(task => task.EndDate <= optn.EndDate).ToList();
 
             if(optn.TaskDesc != null)
-                items = items.Where(task => task.TaskDesc.Contains(optn.TaskDesc)).ToList();
+                items = items.Where(task => task.TaskDesc.ToLower().Contains(optn.TaskDesc.ToLower())).ToList();
 
             if (optn.ParentDesc != null)
-                items = items.Where(task => GetParentDescription(task.ParentId).Contains(optn.ParentDesc)).ToList();
+                items = items.Where(task => GetParentDescription(task.ParentId).Contains(optn.ParentDesc.ToLower())).ToList();
                
             var result = items.Select(t => new TaskDTO    
                 {
