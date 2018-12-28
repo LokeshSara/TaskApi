@@ -1,21 +1,11 @@
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.deps.json
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.runtimeconfig.json
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.runtimeconfig.dev.json
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.dll
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.pdb
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.csproj.CoreCompileInputs.cache
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.AssemblyInfoInputs.cache
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.AssemblyInfo.cs
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.dll
-C:\Lokesh_Work\FSE\29 - NET Case Study Task Manager\TaskManagerAPI\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.pdb
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.deps.json
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.runtimeconfig.json
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.runtimeconfig.dev.json
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.dll
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Debug\netcoreapp2.0\TaskApi.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.csprojAssemblyReference.cache
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.csproj.CoreCompileInputs.cache
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.AssemblyInfoInputs.cache
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.AssemblyInfo.cs
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.dll
 E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.pdb
-E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Debug\netcoreapp2.0\TaskApi.csprojAssemblyReference.cache
