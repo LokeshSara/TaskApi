@@ -1,0 +1,10 @@
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Release\netcoreapp2.0\TaskApi.deps.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Release\netcoreapp2.0\TaskApi.runtimeconfig.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Release\netcoreapp2.0\TaskApi.runtimeconfig.dev.json
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Release\netcoreapp2.0\TaskApi.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\bin\Release\netcoreapp2.0\TaskApi.pdb
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Release\netcoreapp2.0\TaskApi.csproj.CoreCompileInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Release\netcoreapp2.0\TaskApi.AssemblyInfoInputs.cache
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Release\netcoreapp2.0\TaskApi.AssemblyInfo.cs
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Release\netcoreapp2.0\TaskApi.dll
+E:\Lokesh_Work\FSD\Project\TaskApi\TaskApi\obj\Release\netcoreapp2.0\TaskApi.pdb
